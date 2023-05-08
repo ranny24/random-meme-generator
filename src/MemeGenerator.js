@@ -71,14 +71,15 @@ const MemeGenerator = () => {
         <select id="meme-template" onChange={handleMemeTemplateChange}>
           <option value="doge">Doge</option>
           <option value="bender">Bender</option>
-          <option value="y-u-no">Y U No</option>
-          <option value="futurama-fry">Futurama Fry</option>
           <option value="philosoraptor">Philosoraptor</option>
           <option value="drake">Drake</option>
-          <option value="distracted-boyfriend">Distracted Boyfriend</option>
-          <option value="two-buttons">Two Buttons</option>
-          <option value="expanding-brain">Expanding Brain</option>
-          <option value="hide-the-pain-harold">Hide the Pain Harold</option>
+          <option value="kermit">Kermit</option>
+          <option key="morpheus" value="morpheus">
+            Morpheus
+          </option>
+          <option key="sleeping-shaq" value="sleeping-shaq">
+            Sleeping Shaq
+          </option>
         </select>
       </div>
       <div>
