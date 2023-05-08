@@ -1,3 +1,4 @@
+import './styles.scss';
 import axios from 'axios';
 import React, { useState } from 'react';
 
@@ -38,6 +39,7 @@ const MemeGenerator = () => {
   };
 
   const handleGenerate = () => {
+    // eslint-disable-next-line no-restricted-syntax
     const templateName = document.getElementById('meme-template').value;
     const top = encodeURIComponent(topText);
     const bottom = encodeURIComponent(bottomText);
@@ -49,7 +51,7 @@ const MemeGenerator = () => {
     <div>
       <h1>Meme Generator</h1>
       <div>
-        <label htmlFor="top-text">Top Text</label>
+        <label htmlFor="top-text">Top Text: </label>
         <input
           type="text"
           id="top-text"
@@ -58,7 +60,7 @@ const MemeGenerator = () => {
         />
       </div>
       <div>
-        <label htmlFor="bottom-text">Bottom Text</label>
+        <label htmlFor="bottom-text">Bottom Text: </label>
         <input
           type="text"
           id="bottom-text"
@@ -67,7 +69,7 @@ const MemeGenerator = () => {
         />
       </div>
       <div>
-        <label htmlFor="meme-template">Meme template</label>
+        <label htmlFor="meme-template">Meme template: </label>
         <select id="meme-template" onChange={handleMemeTemplateChange}>
           <option value="doge">Doge</option>
           <option value="bender">Bender</option>
@@ -76,9 +78,6 @@ const MemeGenerator = () => {
           <option value="kermit">Kermit</option>
           <option key="morpheus" value="morpheus">
             Morpheus
-          </option>
-          <option key="sleeping-shaq" value="sleeping-shaq">
-            Sleeping Shaq
           </option>
         </select>
       </div>

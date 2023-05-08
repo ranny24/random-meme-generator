@@ -1,79 +1,86 @@
-$primary-color: #007bff;
-$font-size: 1rem;
-
 body {
-  font-family: sans-serif;
+  background-color: #111;
+  color: #fff;
   margin: 0;
-  padding: 0;
-}
-
-.App {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200vh;
-}
-
-.MemeGenerator {
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  text-align: center;
-  width: 400px;
 }
 
 h1 {
-  color: $primary-color;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: pink;
+  font-style: oblique;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
 }
 
 label {
-  display: block;
-  font-size: $font-size;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  align-items: center;
 }
 
-input[type='text'] {
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-  font-size: $font-size;
-  padding: 10px;
-  width: 100%;
+input {
+  width: 63%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: solid;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5rem;
+  display: center;
+  border-inline-end-width: 1rem;
 }
 
 select {
-  appearance: none;
-  background-color: #fff;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-  font-size: $font-size;
-  padding: 10px;
-  width: 100%;
+  width: 65%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: solid;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5rem;
+  display: center;
+  border-inline-end-width: 1rem;
 }
 
-img[data-test-id='meme-image'] {
-  border-radius: 5px;
-  margin-top: 20px;
+img {
   max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  display: center;
+  border: solid;
+  border-color: red;
 }
 
 button {
-  background-color: $primary-color;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  border: solid;
+  background-color: #fff;
+  color: #111;
+  font-size: 1.5rem;
   cursor: pointer;
-  font-size: $font-size;
-  padding: 10px;
-  margin-top: 20px;
-  transition: all 0.3s ease;
-  width: 100%;
+  transition: background-color 0.2s ease-in-out;
+  align-items: center;
 
   &:hover {
-    background-color: darken($primary-color, 10%);
+    background-color: #444;
+    color: #fff;
   }
 }
